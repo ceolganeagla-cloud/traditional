@@ -1,8 +1,9 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { createRoot } from 'react-dom/client'
+import { HashRouter } from 'react-router-dom'
+import App from './App'
 
-export default defineConfig({
-  plugins: [react()],
-  // IMPORTANT: this must match the repo name used on Pages
-  base: '/traditional/',
-})
+createRoot(document.getElementById('root')!).render(
+  <HashRouter>
+    <App />
+  </HashRouter>
+)
