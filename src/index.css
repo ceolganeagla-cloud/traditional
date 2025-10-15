@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App theming */
+:root {
+  --cge-green: #169B62;
+  --cge-orange: #FF883E;
+}
+
+body {
+  background: #f8fafc;
+}
